@@ -1,219 +1,131 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-<title>Ramya Portfolio</title>
+    <title>Ramya Portfolio</title>
 
-<style>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f4f7fb;
+            color: #333;
+        }
 
-body{
-    font-family: Arial, sans-serif;
-    margin:0;
-    background:#f4f4f4;
-}
+        header {
+            background: #2563eb;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
 
+        section {
+            background: white;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+        }
 
-header{
-    background:#333;
-    color:white;
-    padding:30px;
-    text-align:center;
-}
+        h2 {
+            color: #2563eb;
+        }
 
+        .card {
+            padding: 15px;
+            margin: 10px 0;
+            background: #eef2ff;
+            border-radius: 8px;
+        }
 
-nav{
-    background:#222;
-    padding:15px;
-    text-align:center;
-}
-
-
-nav a{
-    color:white;
-    text-decoration:none;
-    margin:20px;
-}
-
-
-section{
-    background:white;
-    margin:20px;
-    padding:20px;
-    border-radius:10px;
-}
-
-
-h2{
-    color:#333;
-}
-
-
-.box{
-    background:#eeeeee;
-    padding:15px;
-    margin:10px;
-    border-radius:8px;
-}
-
-
-footer{
-    background:#333;
-    color:white;
-    text-align:center;
-    padding:15px;
-}
-
-
-</style>
+        footer {
+            background: #2563eb;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
 
 </head>
 
-
 <body>
 
-
 <header>
-
-<h1>Ramya's Portfolio</h1>
-
-<p>Information Technology Student</p>
-
-<p>Cloud | DevOps | AWS | Software Development</p>
-
+    <h1>Welcome to Ramya's Portfolio</h1>
+    <p>B.Tech Information Technology Student</p>
 </header>
 
 
-
-<nav>
-
-<a href="#about">About</a>
-<a href="#skills">Skills</a>
-<a href="#projects">Projects</a>
-<a href="#contact">Contact</a>
-
-</nav>
+<section>
+    <h2>About Me</h2>
+    <p>
+        I am Ramya, an IT student interested in Cloud Computing,
+        DevOps, Cybersecurity and Software Development.
+    </p>
+</section>
 
 
+<section>
+    <h2>Technical Skills</h2>
 
-<section id="about">
+    <div class="card">
+        Programming: Java, Python, C, C++
+    </div>
 
-<h2>About Me</h2>
+    <div class="card">
+        Web Technologies: HTML, CSS, JavaScript
+    </div>
 
-<p>
-I am a B.Tech Information Technology student interested in
-Cloud Computing, DevOps and Software Development.
-I enjoy learning new technologies and building projects.
-</p>
+    <div class="card">
+        Tools: Git, GitHub, Docker, AWS EC2, GitHub Actions
+    </div>
+</section>
+
+
+<section>
+    <h2>Projects</h2>
+
+    <div class="card">
+        <h3>Automated CI/CD Pipeline</h3>
+        <p>
+            Developed and deployed a web application using
+            Docker, GitHub Actions and AWS EC2.
+            The deployment process is automated through CI/CD.
+        </p>
+    </div>
+
+
+    <div class="card">
+        <h3>Serverless Inventory Management System</h3>
+        <p>
+            Built using AWS S3, Lambda, DynamoDB and SNS
+            for automated inventory monitoring.
+        </p>
+    </div>
 
 </section>
 
 
+<section>
+    <h2>Deployment Information</h2>
 
-<section id="skills">
-
-<h2>Skills</h2>
-
-
-<div class="box">
-
-<h3>Programming Languages</h3>
-
-<p>
-Java, Python, C, C++
-</p>
-
-</div>
-
-
-<div class="box">
-
-<h3>Web Technologies</h3>
-
-<p>
-HTML, CSS, JavaScript
-</p>
-
-</div>
-
-
-<div class="box">
-
-<h3>DevOps & Cloud Tools</h3>
-
-<p>
-Git, GitHub, Docker, GitHub Actions, AWS EC2
-</p>
-
-</div>
-
+    <div class="card">
+        🚀 Hosted on AWS EC2<br>
+        🐳 Containerized using Docker<br>
+        ⚙️ Automated using GitHub Actions
+    </div>
 
 </section>
 
 
-
-
-<section id="projects">
-
-<h2>Projects</h2>
-
-
-<div class="box">
-
-<h3>Automated CI/CD Pipeline</h3>
-
-<p>
-Built a web application deployment pipeline using
-GitHub Actions, Docker and AWS EC2.
-The application is automatically built and deployed
-whenever code changes are pushed to GitHub.
-</p>
-
-</div>
-
-
-
-<div class="box">
-
-<h3>Serverless Inventory Management System</h3>
-
-<p>
-Developed a cloud-based inventory system using
-AWS S3, Lambda, DynamoDB and SNS notifications.
-</p>
-
-</div>
-
-
+<section>
+    <h2>Contact</h2>
+    <p>Email: ramya@example.com</p>
 </section>
-
-
-
-
-<section id="contact">
-
-<h2>Contact</h2>
-
-<p>Email: ramya@example.com</p>
-
-<p>GitHub: github.com/Ramya</p>
-
-<p>LinkedIn: linkedin.com/in/ramya</p>
-
-
-</section>
-
 
 
 <footer>
-
-<p>
-🚀 Automatically Deployed using CI/CD Pipeline
-</p>
-
+    <p>Developed by Ramya | CI/CD Docker Project</p>
 </footer>
 
 
-
 </body>
-
 </html>
