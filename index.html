@@ -1,206 +1,171 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Ramya Portfolio - CI/CD Project</title>
+<title>CI/CD Pipeline Project</title>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background: #f4f7fb;
-            color: #333;
-        }
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', sans-serif;
+}
 
-        nav {
-            background: #1e40af;
-            padding: 15px;
-            text-align: center;
-        }
+body{
+    background:linear-gradient(135deg,#e3f2fd,#ffffff);
+}
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 20px;
-            font-weight: bold;
-        }
+header{
+    background:#0d47a1;
+    color:white;
+    padding:30px;
+    text-align:center;
+}
 
-        header {
-            background: #2563eb;
-            color: white;
-            padding: 40px;
-            text-align: center;
-        }
+header h1{
+    font-size:35px;
+}
 
-        section {
-            background: white;
-            margin: 20px;
-            padding: 25px;
-            border-radius: 10px;
-        }
+.container{
+    width:85%;
+    margin:40px auto;
+}
 
-        h2 {
-            color: #2563eb;
-        }
+.card{
+    background:white;
+    padding:25px;
+    margin:20px 0;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
 
-        .card {
-            padding: 15px;
-            margin: 10px 0;
-            background: #eef2ff;
-            border-radius: 8px;
-        }
+.card h2{
+    color:#0d47a1;
+    margin-bottom:15px;
+}
 
-        footer {
-            background: #2563eb;
-            color: white;
-            text-align: center;
-            padding: 15px;
-        }
+.tech{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
 
-        button {
-            background: #2563eb;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-        }
+.tech span{
+    background:#1976d2;
+    color:white;
+    padding:12px 20px;
+    border-radius:20px;
+}
 
-    </style>
+.flow{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+    margin-top:20px;
+}
+
+.flow div{
+    background:#e3f2fd;
+    padding:15px;
+    border-radius:10px;
+    font-weight:bold;
+}
+
+.success{
+    text-align:center;
+    color:green;
+    font-size:25px;
+    font-weight:bold;
+}
+
+footer{
+    background:#0d47a1;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:40px;
+}
+
+</style>
+
 </head>
-
 
 <body>
 
-<nav>
-    <a href="#">Home</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#deployment">Deployment</a>
-</nav>
-
-
 <header>
-    <h1>Welcome to Ramya's Portfolio</h1>
-
-    <h3>
-        Automated CI/CD Pipeline using Docker,
-        GitHub Actions and AWS EC2
-    </h3>
-
-    <button>Deployment Successful ✅</button>
-
+<h1>Automated CI/CD Pipeline</h1>
+<p>Docker + GitHub Actions + AWS EC2</p>
 </header>
 
 
-<section>
-    <h2>About Me</h2>
-
-    <p>
-        I am an Information Technology student interested in
-        Cloud Computing, DevOps and Software Development.
-    </p>
-
-</section>
-
-
-
-<section id="skills">
-
-<h2>Technical Skills</h2>
-
+<div class="container">
 
 <div class="card">
-    Programming: Java, Python, C, C++
+<h2>Project Overview</h2>
+<p>
+A cloud-based CI/CD pipeline that automatically builds,
+tests and deploys a web application using Docker containers
+and AWS EC2 infrastructure.
+</p>
 </div>
 
 
 <div class="card">
-    Web Technologies: HTML, CSS, JavaScript
+<h2>Technologies Used</h2>
+
+<div class="tech">
+<span>HTML</span>
+<span>Docker</span>
+<span>GitHub Actions</span>
+<span>AWS EC2</span>
+<span>Linux</span>
+</div>
+
 </div>
 
 
 <div class="card">
-    Tools: Git, GitHub, Docker, AWS EC2, GitHub Actions
+
+<h2>CI/CD Workflow</h2>
+
+<div class="flow">
+<div>Code Commit</div>
+<div>GitHub</div>
+<div>Build Docker Image</div>
+<div>Deploy EC2</div>
+<div>Live Website</div>
 </div>
 
-
-</section>
-
-
-
-
-<section id="projects">
-
-<h2>Projects</h2>
+</div>
 
 
 <div class="card">
 
-<h3>🚀 Automated CI/CD Pipeline</h3>
+<h2>Project Benefits</h2>
 
 <p>
-Developed and deployed a web application using
-Docker, GitHub Actions and AWS EC2.
-The deployment process is automated through CI/CD.
+✔ Automatic Deployment<br>
+✔ Reduced Manual Errors<br>
+✔ Faster Software Delivery<br>
+✔ Cloud Based Deployment
 </p>
 
 </div>
 
 
-
-<div class="card">
-
-<h3>📦 Serverless Inventory Management System</h3>
-
-<p>
-Built using AWS S3, Lambda, DynamoDB and SNS
-for automated inventory monitoring and alerts.
-</p>
-
+<div class="success">
+🚀 Deployment Successful
 </div>
 
 
-</section>
-
-
-
-
-<section id="deployment">
-
-<h2>Deployment Details</h2>
-
-
-<div class="card">
-
-🚀 Hosted on AWS EC2
-
-<br>
-
-🐳 Containerized using Docker
-
-<br>
-
-⚙️ Automated using GitHub Actions
-
-<br>
-
-✅ Continuous Deployment Enabled
-
 </div>
-
-
-</section>
-
-
 
 
 <footer>
-
-<p>
-Developed by Ramya | CI/CD Docker Project
-</p>
-
+Developed by Ramya | CI/CD Pipeline Project
 </footer>
-
 
 </body>
 </html>
