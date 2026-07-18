@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Ramya Portfolio</title>
+    <title>Ramya Portfolio - CI/CD Project</title>
 
     <style>
         body {
@@ -11,17 +11,30 @@
             color: #333;
         }
 
+        nav {
+            background: #1e40af;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 20px;
+            font-weight: bold;
+        }
+
         header {
             background: #2563eb;
             color: white;
-            padding: 30px;
+            padding: 40px;
             text-align: center;
         }
 
         section {
             background: white;
             margin: 20px;
-            padding: 20px;
+            padding: 25px;
             border-radius: 10px;
         }
 
@@ -42,88 +55,150 @@
             text-align: center;
             padding: 15px;
         }
-    </style>
 
+        button {
+            background: #2563eb;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+        }
+
+    </style>
 </head>
+
 
 <body>
 
+<nav>
+    <a href="#">Home</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#deployment">Deployment</a>
+</nav>
+
+
 <header>
     <h1>Welcome to Ramya's Portfolio</h1>
-    <p>B.Tech Information Technology Student</p>
+
+    <h3>
+        Automated CI/CD Pipeline using Docker,
+        GitHub Actions and AWS EC2
+    </h3>
+
+    <button>Deployment Successful ✅</button>
+
 </header>
 
 
 <section>
     <h2>About Me</h2>
+
     <p>
-        I am Ramya, an IT student interested in Cloud Computing,
-        DevOps, Cybersecurity and Software Development.
+        I am an Information Technology student interested in
+        Cloud Computing, DevOps and Software Development.
     </p>
-</section>
-
-
-<section>
-    <h2>Technical Skills</h2>
-
-    <div class="card">
-        Programming: Java, Python, C, C++
-    </div>
-
-    <div class="card">
-        Web Technologies: HTML, CSS, JavaScript
-    </div>
-
-    <div class="card">
-        Tools: Git, GitHub, Docker, AWS EC2, GitHub Actions
-    </div>
-</section>
-
-
-<section>
-    <h2>Projects</h2>
-
-    <div class="card">
-        <h3>Automated CI/CD Pipeline</h3>
-        <p>
-            Developed and deployed a web application using
-            Docker, GitHub Actions and AWS EC2.
-            The deployment process is automated through CI/CD.
-        </p>
-    </div>
-
-
-    <div class="card">
-        <h3>Serverless Inventory Management System</h3>
-        <p>
-            Built using AWS S3, Lambda, DynamoDB and SNS
-            for automated inventory monitoring.
-        </p>
-    </div>
 
 </section>
 
 
-<section>
-    <h2>Deployment Information</h2>
 
-    <div class="card">
-        🚀 Hosted on AWS EC2<br>
-        🐳 Containerized using Docker<br>
-        ⚙️ Automated using GitHub Actions
-    </div>
+<section id="skills">
+
+<h2>Technical Skills</h2>
+
+
+<div class="card">
+    Programming: Java, Python, C, C++
+</div>
+
+
+<div class="card">
+    Web Technologies: HTML, CSS, JavaScript
+</div>
+
+
+<div class="card">
+    Tools: Git, GitHub, Docker, AWS EC2, GitHub Actions
+</div>
+
 
 </section>
 
 
-<section>
-    <h2>Contact</h2>
-    <p>Email: ramya@example.com</p>
+
+
+<section id="projects">
+
+<h2>Projects</h2>
+
+
+<div class="card">
+
+<h3>🚀 Automated CI/CD Pipeline</h3>
+
+<p>
+Developed and deployed a web application using
+Docker, GitHub Actions and AWS EC2.
+The deployment process is automated through CI/CD.
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>📦 Serverless Inventory Management System</h3>
+
+<p>
+Built using AWS S3, Lambda, DynamoDB and SNS
+for automated inventory monitoring and alerts.
+</p>
+
+</div>
+
+
 </section>
+
+
+
+
+<section id="deployment">
+
+<h2>Deployment Details</h2>
+
+
+<div class="card">
+
+🚀 Hosted on AWS EC2
+
+<br>
+
+🐳 Containerized using Docker
+
+<br>
+
+⚙️ Automated using GitHub Actions
+
+<br>
+
+✅ Continuous Deployment Enabled
+
+</div>
+
+
+</section>
+
+
 
 
 <footer>
-    <p>Developed by Ramya | CI/CD Docker Project</p>
+
+<p>
+Developed by Ramya | CI/CD Docker Project
+</p>
+
 </footer>
 
 
